@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- Groupe -->
-	<groupId>com.notilus.maven</groupId>
-	<artifactId>parsecss-maven-plugin</artifactId>
-	<version>1.0.0</version>
+	<groupId>com.github.aticus02</groupId>
+	<artifactId>venusmaven</artifactId>
+	<version>1_0_0</version>
 	<packaging>maven-plugin</packaging>
 
 	<!-- Nom -->
@@ -57,7 +57,6 @@
 				<artifactId>maven-plugin-plugin</artifactId>
 				<version>3.4</version>
 				<configuration>
-					<goalPrefix>parsecss-maven-plugin</goalPrefix>
 					<skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
 				</configuration>
 				<executions>

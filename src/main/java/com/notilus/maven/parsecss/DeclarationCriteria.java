@@ -21,7 +21,7 @@ public class DeclarationCriteria {
 	public CSSExpression getValue() { return value; }
 	public void setPropertyName(String propertyName) { this.propertyName = propertyName; }
 	public void setExpressionValue(String expressionValue) { this.expressionValue = expressionValue; }
-	public void setValue(CSSExpression value) { this.value = value; }
+	public void setValue(String value) { this.value = new CSSExpression();this.value.addTermSimple(value); }
 
 	/**
 	 * Constructeur
@@ -38,17 +38,12 @@ public class DeclarationCriteria {
 		//Héritage
 		this();
 		
-		CSSExpression cssExpression = new CSSExpression();
-		
 		//Définition des propriétés
 		setPropertyName(propertyName);
 		setExpressionValue(expressionValue);
-		
-		//Initialisation de l'expression
-		cssExpression.addTermSimple(value);
 
 		//Définition de l'expression
-		setValue(cssExpression); 
+		setValue(value); 
 	}
 	
 	/**
